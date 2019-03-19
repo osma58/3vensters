@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="3venster.css">
+    <title>3 vensters</title>
+    <style>
+        #toggleMenu:checked ~ main {
+            margin-left: 10em;
+        }
+        nav {
+            position: fixed;
+
+        }
+        .toggleLabel::after {
+            content:'\2630';
+            cursor: pointer;
+        }
+        #toggleMenu:checked ~ main .toggleLabel::after {
+            content: '\2715';
+            cursor: pointer;
+        }
+        main {
+            position: absolute;
+            margin-left: 0;
+            transition: margin-left .6s cubic-bezier(.17,.67,.83,.136);
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox"  id="toggleMenu">
+    <nav>
+        <h4>Menu</h4>
+        <ul>
+            <li>
+                <a href="index.html" >Lang leven de flex 2</a>
+            </li>
+            <li>
+                <a href="2inhoud.html" >Lang leven de flex 1</a>
+            </li>
+            <li>
+                <a href="3inhoud.html" class="active">Eves laurant zit vast..</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <label class="toggleLabel" for="toggleMenu"></label>
+        <h1> Amsterdamse faalrapper Eves Laurent bekent plofkraak met Audi</h1>
+        <p><img src="eves.jpg" ></p>
+        <div><h3>Een beetje een rapper heeft altijd een side hustle lopen. Voor Jeff A., beter bekend als Eves Laurent (foto links), was dit het opblazen van een geldautomaat. Helaas voor hem draaide de kraak uit op een fiasco en zit hij nu vast.</h3>
+        <p>Tot voor kort was het leven van Eves Laurent a.k.a. Jeff A. (28) overzichtelijk: beetje grinden, beetje hosselen, beetje flashen met goud, dikke auto's, designerkleren en dure flessen. Kortom: precies hetzelfde doen als wat elke andere stereotype rapper doet. Alleen is Eves al sinds begin mei, in de woorden van Styles P., locked up. Dit op verdenking van een plofkraak in het Duitse Wiesbaden, waarbij een schamele 1.900 euro werd buitgemaakt. Bovendien reden de daders - Jeff en een 23-jarige andere man - tijdens hun vlucht op de snelweg hun gestolen Audi stuk. Er was geen politiewerk voor nodig om ze te arresteren, de kit hoefde alleen maar het oliespoor te volgen en de mannen een paar kilometer verderop aan te houden. Hopelijk is de beste man beter in rappen dan in plofkraken plegen.</p>
+         </div>
+        <div><img class="c" src="audi.jpg" alt="" srcset="">
+        <p>Uiteraard krijgt hij veel steun, van zijn rapformatie De Fellas (#freeEvesLaurent), van zijn label High Paid Fellas (HPF), en van fans. Het zal hem echter niet veel helpen, aangezien hij volgens Het Parool inmiddels een bekentenis heeft afgelegd. Heeft de straat je dan niet geleerd dat je altijd zwijgt tegen de skotoe? Mocht Jeff wat langer achter de 101 barz verdwijnen, dan zal dat zijn reputatie geen kwaad doen. Sterker nog: in het rapcircuit is een strafblad net zo'n statussymbool als Gucci-riemen en Versace-nektasjes.
+
+                Omdat we de beroerdste niet zijn, pluggen we nog even een zomersessie van Eves. En daaruit blijkt: hij kan inderdaad beter rappen dan plofkraken. Veel beter zelfs. Die flow is helemaal niet slecht. De komende tijd kan hij mooi zonder afleiding teksten gaan schrijven.</p>
+        </div>
+        <p>bron: https://www.autobahn.eu/10960/amsterdamse-faalrapper-eves-laurent-bekent-plofkraak-met-audi/.</p>
+        <hr>
+        <img  class="margin" src="eves.png" width="400px" alt="" srcset="">
+        <footer>
+                <div id="validatie">
+                        <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+                          <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                            <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+                        </a>
+                    </div>
+         </footer>
+    </main>
+    
+
+
+</body>
+</html>

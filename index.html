@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="3venster.css">
+    <title>3 vensters</title>
+    <style>
+        #toggleMenu:checked ~ main {
+            margin-left: 10em;
+        }
+        nav {
+            position: fixed;
+
+        }
+        .toggleLabel::after {
+            content:'\2630';
+            cursor: pointer;
+        }
+        #toggleMenu:checked ~ main .toggleLabel::after {
+            content: '\2715';
+            cursor: pointer;
+        }
+        main {
+            position: absolute;
+            margin-left: 0;
+            transition: margin-left .6s cubic-bezier(.17,.67,.83,.136);
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox"  id="toggleMenu">
+    <nav>
+        <h4>Menu</h4>
+        <ul>
+            <li>
+                <a href="index.html" class="active">Lang leven de flex 2</a>
+            </li>
+            <li>
+                <a href="2inhoud.html">Lang leven de flex 1</a>
+            </li>
+            <li>
+                <a href="3inhoud.html">Eves laurant zit vast..</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <label class="toggleLabel" for="toggleMenu"></label>
+        
+         <h1>Lang leven de flex 2</h1>
+         <div class=""><img width="500px" src="1.png" ></div>
+         <div class="hoi"><p>Na maanden lang teasen is het eindelijk zo ver. De mannen van De Fellas laten vandaag weten dat hun tweede gezamenlijke album, Lang Leven De Flex 2, op 11 januari zal uitkomen. Op de plaat zullen uiteraard bijdrages te horen zijn van Eves Laurent, Frsh, Brasco, Geechi, Spens, Getit, Teflon en Blow. In aanloop naar de plaat presenteren de Amsterdamse rappers een 4-delige docu, waarvan vandaag het eerste deel verschijnt.</p>
+    
+        
+            <p> Fellas zijn weer hindabuilding bij Rotjoch. De groep bestaande uit Eves Laurent, Frsh, Brasco, Geechi en Spens maken zich op voor hun 2e project. Na “Lang Leven De Flex” met onder andere de singles “Scheuren” en “Splash” maken de heren zich op voor het vervolg “Lang Leven De Flex 2”. De Fellas gingen voor de promotie van het 2e poject langs bij Rotjoch voor een sessie, de enige ontbrekende in de booth is Eves Laurent. Eves Laurent zit momenteel vast wegens een Plofkraak in Duitsland. Free Eves Laurent nog steeds!</p>
+            
+            <P>bron : https://errday.nl/cultuur/de-fellas-maken-zich-op-voor-lang-leven-de-flex-2-en-gingen-daarom-langs-bij-rotjoch/.<br></p>
+            <p>bron : https://www.puna.nl/de-fellas-kondigen-releasedate-lang-leven-de-flex-2-aan/.<br><br></P>
+         </div>
+         
+           <hr>
+           <img src="a.jpg" width="300px" alt="" srcset="">
+           <img src="b.jpg" width="300px" alt="" srcset="">
+           <img src="c.jpg" width="300px" alt="" srcset="">
+           <footer>
+                <div id="validatie">
+                        <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+                            <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                            <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+                        </a>
+                    </div>
+         </footer>
+    </main>
+
+ 
+</body>
+</html>

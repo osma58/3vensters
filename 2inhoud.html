@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="3venster.css">
+    <title>3 vensters</title>
+    <style>
+        #toggleMenu:checked ~ main {
+            margin-left: 10em;
+        }
+        nav {
+            position: fixed;
+
+        }
+        .toggleLabel::after {
+            content:'\2630';
+            cursor: pointer;
+        }
+        #toggleMenu:checked ~ main .toggleLabel::after {
+            content: '\2715';
+            cursor: pointer;
+        }
+        main {
+            position: absolute;
+            margin-left: 0;
+            transition: margin-left .6s cubic-bezier(.17,.67,.83,.136);
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox"  id="toggleMenu">
+    <nav>
+        <h4>Menu</h4>
+        <ul>
+            <li>
+                <a href="index.html" >Lang leven de flex 2</a>
+            </li>
+            <li>
+                <a href="2inhoud.html" class="active">Lang leven de flex 1</a>
+            </li>
+            <li>
+                <a href="3inhoud.html">Eves laurant zit vast..</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <label class="toggleLabel" for="toggleMenu"></label>
+        <h1>Lang leven de flex </h1>
+        <div></div><img src="flex.jpg" ><div>
+        <div><p>
+                
+                1 Scheuren (Ft. Damier, Eves Laurent, Geechi & SPENS) Lyrics<br>
+                2 Hellabandz Lyrics<br>
+                3 Puro Flex Lyrics<br>
+                4 Mazzeltov Lyrics<br>
+                6 Saus Lyrics<br>
+                7 Streetvibes Lyrics<br>
+                8 Wayback Lyrics<br>
+                9 Splash (Ft. BKO) Lyrics<br>
+                10 Lang Leven (Ft. Hef) Lyrics<br>
+                11 Lit Lyrics<br>
+                12 Lingo Lyrics<br>
+                13 Vogels (Ft. LouiVos) Lyrics<br>
+                14 Heftig Lyrics<br>
+                15 Inspiratie Lyrics<br>
+                16 Laat In De Nacht (Ft. Eves Laurent, Geechi & SPENS) Lyrics<br>
+                18 Sleng (Ft. Geechi & SPENS) Lyrics<br>
+                19 X & O Lyrics<br>
+                20 1200 Lyrics
+                
+        </p></div>
+  <hr>
+  <img src="a1.jpg" width="300px" alt="" srcset="">
+  <img src="b1.jpg" width="300px" alt="" srcset="">
+  <img src="c1.jpg" width="300px" alt="" srcset="">
+  <footer>
+        <div id="validatie">
+                <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+                    <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                    <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+                </a>
+            </div>
+ </footer>
+    </main>
+
+
+</body>
+</html>
